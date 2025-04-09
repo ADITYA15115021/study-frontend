@@ -15,7 +15,7 @@ export default function SignUp(){
         const { error } = await supabase.auth.signInWithOAuth({
           provider: "google",
           options: {
-            redirectTo: "https://ak-backend1.xyz/auth/callback", 
+            redirectTo: window.location.origin + "/auth/callback", 
           },
         });
         if (error) {
