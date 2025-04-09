@@ -15,7 +15,7 @@ export default function SignUp(){
         const { error } = await supabase.auth.signInWithOAuth({
           provider: "google",
           options: {
-            redirectTo: window.location.origin + "/auth/callback", 
+            redirectTo: "https://study-frontend-puhp.vercel.app/auth/callback", 
           },
         });
         if (error) {
