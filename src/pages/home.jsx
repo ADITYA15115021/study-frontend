@@ -1,8 +1,8 @@
 // import { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
-import { Appbar } from "../components/AppBar";
+import { Appbar } from "../components/Appbar.jsx";
 import { useArticles } from "../hooks";
-import { ArticleCard } from "../components/ArticleCard";
+import { ArticleCard } from "../components/ArticleCard.jsx";
 
 
 export default function Home(){
