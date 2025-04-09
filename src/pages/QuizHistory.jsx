@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
-
+import { Spinner } from "../components/Spinner";
 
 export default function QuizHistory(){
 
     const userId = localStorage.getItem("userId");
-     const [history,setHistory] = useState([]);
+    const [history,setHistory] = useState([]);
+    const [loading,setLoading] = useState(true);
 
     useEffect(() => {
 
@@ -16,11 +17,21 @@ export default function QuizHistory(){
                 params : {userId}
             });
             setHistory(response.data.dbResponse);
+            setLoading(false);
         }
 
         fetchRecords();
        
     },[userId])
+
+    
+    if( loading ){
+      return (
+       <div className="h-screen flex justify-center items-center">
+         <Spinner/>
+       </div>
+      )
+   }
 
     return (
         <div className="min-h-screen bg-gray-100 px-4 py-10">

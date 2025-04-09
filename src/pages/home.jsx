@@ -3,7 +3,7 @@
 import { Appbar } from "../components/Appbar.jsx";
 import { useArticles } from "../hooks";
 import { ArticleCard } from "../components/ArticleCard.jsx";
-
+import { Spinner } from "../components/Spinner.jsx";
 
 export default function Home(){
 
@@ -29,7 +29,7 @@ export default function Home(){
     if( loading ){
            return (
             <div className="h-screen flex justify-center items-center">
-               fetching the articles !
+              <Spinner/>
             </div>
            )
         } 
