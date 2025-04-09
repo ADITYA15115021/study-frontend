@@ -31,7 +31,7 @@ export function useArticle({id}){
             console.log(id);
 
             try {
-                const response = await axios.get(`'https://ak-backend1.xyz/get-article/${id}`);
+                const response = await axios.get(`https://ak-backend1.xyz/get-article/${id}`);
                 //console.log("in useArticle",response.data.dbResponse);
                 setArticle(response.data.dbResponse);
                 setLoading(false);
