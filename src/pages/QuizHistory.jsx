@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
 import { Spinner } from "../components/Spinner";
+import { Appbar } from "../components/AppBar";
 
 export default function QuizHistory(){
 
@@ -37,9 +38,9 @@ export default function QuizHistory(){
 
       <div>
 
-<div className="">
-      <Appbar />       
-      </div>
+        <div className="">
+         <Appbar />       
+        </div>
 
 
       <div className="min-h-screen bg-gray-100 px-4 py-10">
@@ -63,7 +64,7 @@ export default function QuizHistory(){
         </div>
 
 
-      </div>
+    </div>
         
     
       );
