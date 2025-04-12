@@ -45,7 +45,7 @@ export default function QuizHistory(){
                 <div key={idx} className="bg-white rounded-xl shadow p-6 border border-gray-200">
                   <div className="flex justify-between items-center mb-2">
                     <span className="text-xl font-semibold text-blue-700">{record.subject.toUpperCase()}</span>
-                    <span className="text-sm text-gray-500">{record.takenAt}</span>
+                    <span className="text-sm text-gray-500">{new Date(record.takenAt).toLocaleString("en-US", { timeZone: "Asia/Kolkata" })}</span>
                   </div>
                   <div className="text-gray-700">Score: <span className="font-semibold text-green-600">{record.score}</span> / {record.tolalMarks}</div>
                 </div>
