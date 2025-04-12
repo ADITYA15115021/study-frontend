@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
-import { Spinner } from "../components/Spinner";
-import { Appbar } from "../components/AppBar";
+import { Spinner } from "../components/Spinner.jsx";
+import { Appbar } from "../components/AppBar.jsx";
 
 export default function QuizHistory(){
 
