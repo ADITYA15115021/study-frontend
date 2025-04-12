@@ -34,7 +34,15 @@ export default function QuizHistory(){
    }
 
     return (
-        <div className="min-h-screen bg-gray-100 px-4 py-10">
+
+      <div>
+
+<div className="">
+      <Appbar />       
+      </div>
+
+
+      <div className="min-h-screen bg-gray-100 px-4 py-10">
           <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">Your Test History</h1>
           
           <div className="max-w-4xl mx-auto space-y-6">
@@ -53,6 +61,11 @@ export default function QuizHistory(){
             )}
           </div>
         </div>
+
+
+      </div>
+        
+    
       );
       
 
